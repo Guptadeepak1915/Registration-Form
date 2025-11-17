@@ -1,0 +1,136 @@
+/* === Google Form Main Container === */
+form {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color:whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333;
+}
+
+/* === Heading Section === */
+.heading {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 22px;
+  color: #202124;
+  margin-bottom: 5px;
+}
+
+.heading p {
+  font-size: 15px;
+  color: #5f6368;
+  margin: 3px 0;
+}
+
+.heading a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.heading a:hover {
+  text-decoration: underline;
+}
+
+/* === Horizontal line === */
+.heading hr {
+  border: none;
+  height: 1px;
+  background-color: #dadce0;
+  margin: 15px 0;
+}
+
+/* === Content Sections === */
+.content {
+  margin-top: 25px;
+}
+
+.content label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.content input[type="text"],
+.content input[type="number"],
+.content input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid #dadce0;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.content input[type="text"]:focus,
+.content input[type="number"]:focus,
+.content input[type="email"]:focus {
+  border-bottom: 2px solid #1a73e8;
+}
+
+/* === Radio buttons === */
+.content input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #1a73e8;
+}
+
+.star {
+  color: red;
+}
+
+/* === Submit Button === */
+.submit-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0b59d1;
+}
+.submit-btn:active{
+  background-color: green;
+}
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .heading h1 {
+    font-size: 18px;
+  }
+
+  .content label {
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+/* === Optional Google-Form style touches === */
+form hr {
+  margin: 10px 0;
+}
+
+span {
+  font-size: 14px;
+  color: #5f6368;
+}

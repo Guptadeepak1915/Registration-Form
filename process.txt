@@ -1,0 +1,26 @@
+step 1:
+Docker Teminal :- docker-compose up --build 
+
+it will create all the container for frontend and bakend and also for databases
+
+step 2:
+  open another terminal and open mysql teminal by this command:- 
+  
+  docker exec -it mysql-db bash :-Yeh tujhe MySQL container ke andar le jaayega
+  after that write this command :-
+      mysql -u root -p 
+
+      uske baad password dale database ka .. ye aapko mysql ke terminal me lekar jayega or waha aap database create ,delete or jo operation krna chate hai  kar skte hai 
+      like :- SHOW DATABASES;
+              USE Binary_Brain;
+              SHOW TABLES;
+
+# Check containers
+docker ps
+
+# View frontend logs
+docker logs -f react-frontend
+
+# See files inside frontend container
+docker exec -it react-frontend ls /usr/share/nginx/html
+
